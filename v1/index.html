@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>      
+<!--<script data-obct type = "text/javascript">
+        /* DO NOT MODIFY THIS CODE*/
+        !function(_window, _document) {
+            var OB_ADV_ID = '002cbfdc1a4d3207c95e6bca316c3bc73c';
+            if (_window.obApi) {
+            var toArray = function(object) {
+                return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
+            };
+            _window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
+            return;
+            }
+            var api = _window.obApi = function() {
+            api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
+            };
+            api.version = '1.1';
+            api.loaded = true;
+            api.marketerId = OB_ADV_ID;
+            api.queue = [];
+            var tag = _document.createElement('script');
+            tag.async = true;
+            tag.src = '//amplify.outbrain.com/cp/obtp.js';
+            tag.type = 'text/javascript';
+            var script = _document.getElementsByTagName('script')[0];
+            script.parentNode.insertBefore(tag, script);
+        }(window, document);
+        
+        obApi('track', 'PAGE_VIEW');
+        </script>-->
+       
+        
+      
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganhando no Automático</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+	
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+
+        (function(b) {
+        
+        var a = {
+        
+        version: "0.0.1",
+        
+        history_api: typeof history.pushState !== "undefined",
+        
+        init: function() {
+        
+        b.location.hash = "#no-back";
+        
+        a.configure();
+        
+        },
+        
+        hasChanged: function() {
+        
+        if (b.location.hash == "#no-back") {
+        
+        b.location.hash = "#";
+        
+        if (b.location.search == null || b.location.search == undefined || b.location.search ==
+        
+        '') {
+        
+        b.location.href = "https://ganhandonoautomatico.com/yt/bk1/index.html";
+        
+        } else {
+        
+        if (location.search.indexOf("src") > -1) {
+        
+        var partes = location.search.slice(1).split('&');
+        
+        var data = {};
+        
+        var new_search = '?';
+        
+        partes.forEach(function(parte) {
+        
+        var chaveValor = parte.split('=');
+        
+        var chave = chaveValor[0];
+        
+        var valor = chaveValor[1];
+        
+        data[chave] = valor;
+        
+        });
+        
+        data.src = data.src + "-->back_home";
+        
+        new_search += JSON.stringify(data).replace(/[{}"]/g, "").replace(/[:]/g, "=")
+        
+        .replace(/[,]/g, "&");
+        
+        b.location.href = "https://ganhandonoautomatico.com/yt/bk1/index.html" + new_search;
+        
+        } else {
+        
+        b.location.href = "https://ganhandonoautomatico.com/yt/bk1/index.html" + b.location.search + "&src=back_home";
+        
+        }
+        
+        }
+        
+        }
+        
+        },
+        
+        checkCompat: function() {
+        
+        if (b.addEventListener) {
+        
+        b.addEventListener("hashchange", a.hasChanged, false);
+        
+        } else {
+        
+        if (b.attachEvent) {
+        
+        b.attachEvent("onhashchange", a.hasChanged);
+        
+        } else {
+        
+        b.onhashchange = a.hasChanged;
+        
+        }
+        
+        }
+        
+        },
+        
+        configure: function() {
+        
+        if (b.location.hash == "#no-back") {
+        
+        if (this.history_api) {
+        
+        history.pushState(null, "", "#");
+        
+        } else {
+        
+        // b.location.hash = "#";
+        
+        if (b.location.search == null || b.location.search == undefined || b.location.search ==
+        
+        '') {
+        
+        b.location.href = "https://ganhandonoautomatico.com/yt/bk1/index.html";
+        
+        } else {
+        
+        if (location.search.indexOf("src") > -1) {
+        
+        var partes = location.search.slice(1).split('&');
+        
+        var data = {};
+        
+        var new_search = '?';
+        
+        partes.forEach(function(parte) {
+        
+        var chaveValor = parte.split('=');
+        
+        var chave = chaveValor[0];
+        
+        var valor = chaveValor[1];
+        
+        data[chave] = valor;
+        
+        });
+        
+        data.src = data.src + "-->back_home";
+        
+        new_search += JSON.stringify(data).replace(/[{}"]/g, "").replace(/[:]/g, "=")
+        
+        .replace(/[,]/g, "&");
+        
+        b.location.href = "https://ganhandonoautomatico.com/yt/bk1/index.html" + new_search;
+        
+        } else {
+        
+        b.location.href = "https://ganhandonoautomatico.com/yt/bk1/index.html" + b.location.search + "&src=back_home";
+        
+        }
+        
+        }
+        
+        }
+        
+        }
+        
+        a.checkCompat();
+        
+        a.hasChanged();
+        
+        }
+        
+        };
+        
+        if (typeof define === "function" && define.amd) {
+        
+        define(function() {
+        
+        return a;
+        
+        });
+        
+        } else {
+        
+        if (typeof module === "object" && module.exports) {
+        
+        module.exports = a;
+        
+        } else {
+        
+        b.noback = a;
+        
+        }
+        
+        }
+        
+        a.init();
+        
+        }(window));
+        
+        </script>
+
+    <header>
+        <div class="attention">
+            <p> ATENÇÃO: O SEU ACESSO SERÁ LIBERADO NO FINAL DO VÍDEO </p>
+        </div>
+        <br>
+        <img src="./assets/logo.png" alt="" >
+        <p> 🔊 Verifique se o seu áudio está ligado!​ </p>
+    </header>
+
+    <section class="video">
+<div id="vid_62cb8bdf5c5d42000dd876f3" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62cb8bdf5c5d42000dd876f3" src="https://images.converteai.net/fd3a4d74-e275-4f48-94a6-1e5cfc6188fe/players/62cb8bdf5c5d42000dd876f3/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62cb8bdf5c5d42000dd876f3" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62cb8bdf5c5d42000dd876f3">var s=document.createElement("script");s.src="https://scripts.converteai.net/fd3a4d74-e275-4f48-94a6-1e5cfc6188fe/players/62cb8bdf5c5d42000dd876f3/player.js",s.async=!0,document.head.appendChild(s);</script>
+    </section>
+
+    <div class="vagas">
+        <div class="fill"> 
+            <span> Vagas preenchidas </span>
+            <span> 87% </span> 
+        </div>
+    </div>
+
+    <div class="delay-btn atrasado">
+        <a href="https://app.monetizze.com.br/r/AJT20839819?u=c&pl=DD171165">Quero receber meu acesso</a>
+    </div>
+
+    <section class="comments">
+        <div class="comments-head">
+            <h3> 7 de 5128 comentários </h3>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-1.png" alt="">
+                <div class="card-comment">
+                    <h4> Maria Fernanda Lima </h4>
+                    <p> Eu vi a Viih Tube indicando isso. Já consegui fazer R$ 850 na primeira semana assistindo os vídeos. </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 371 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 27min </span> </p>
+        </div>
+        <div class="cards left">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-2.png" alt="">
+                <div class="card-comment">
+                    <h4> Ana Lucia Oliveira </h4>
+                    <p> <span>Maria Fernanda Lima</span> Ainda bem que eu assisti tudo. O botão aparece no final do vídeo! </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 283 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 10min </span> </p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-3.png" alt="">
+                <div class="card-comment">
+                    <h4> Maria Clara Lourenço </h4>
+                    <p> Como funciona? Eu também quero começar, alguém me ajuda!!! </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 270 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 53min </span> </p>
+        </div>
+        <div class="cards left">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-4.png" alt="">
+                <div class="card-comment">
+                    <h4> Kensly Cabral </h4>
+                    <p> <span>Maria Clara Lourenço </span> Assiste o vídeo até o fim. No final do vídeo vai liberar um botão e aí tu clica nele. </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 533 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 42min </span> </p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-10 (1).png" alt="">
+                <div class="card-comment">
+                    <h4> Alana Lima </h4>
+                    <p> Finalmente algo que funciona e não é aquelas baboseiras de marketing e venda de curso. </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 371 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 27min </span> </p>
+        </div>
+        <div class="cards left">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-11.png" alt="">
+                <div class="card-comment">
+                    <h4> Jhiullia Freire </h4>
+                    <p> <span>Alana Lima</span> E é sem enrolação também, é só assistir todo o vídeo e clicar no botão que aparece no final. </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 584 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 6h </span> </p>
+        </div>
+        <div class="cards left">
+            <div class="card">
+                <img src="./assets/depoimento-segredo-12.png" alt="">
+                <div class="card-comment">
+                    <h4> Maria Fernanda Lima </h4>
+                    <p> <span>Alana Lima</span> O meu marido largou a UBER para ficar assistindo esses vídeos em casa. Foi uma benção pra gente! </p>
+                    <div class="reaction">
+                        <img src="./assets/likes-1.png" alt="">
+                        <span> 154 </span>
+                    </div>
+                </div>
+            </div>
+            <p> Curtir  ·  Responder  · <span> 4h </span> </p>
+        </div>
+        <br> <br> <br>
+    </section>
+    
+    <footer>
+        <p>
+            Ganhando no Automatico – Todos os direitos reservados. <br>
+            Este site não faz parte nem é endossado pelo Facebook. <br>
+            Facebook é uma marca comercial da Facebook, Inc.
+        </p>
+        <br>
+        <div style="display: flex; align-items: center; justify-content: space-evenly; margin-bottom: 25px;">
+            <a style="text-decoration: none; color: red;" href="./termos-de-uso.html" target="_blank"> Termos de Uso </a> <span style="padding: 0 1rem; color: white;"> | </span>
+            <a style="text-decoration: none; color: red;"href="./politica-de-privacidade.html" target="_blank"> Política de Privacidade </a> 
+            <!-- <span style="padding: 0 1rem; color: white;"> | </span> -->
+            <!-- <a style="text-decoration: none; color: red;"href="./VSL - Ganhe por Assistir.pdf" target="_blank"> Copy do Vídeo </a> -->
+        </div>
+    </footer>
+
+    <div style="display: none;">
+        <script id="_wau2ha">var _wau = _wau || []; _wau.push(["dynamic", "magnhbypdp", "2ha", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+    </div>
+
+    <script>
+        $('.atrasado').hide();
+        setTimeout(function() {
+            $('.atrasado').show();
+        }, 676800);
+    </script>
+
+
+</body>
+</html>
